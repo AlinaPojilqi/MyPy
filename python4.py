@@ -73,9 +73,6 @@ def main():
         headers = parse_html(html)
         save_cache(url, headers)
 
-    html = fetch_html(url)
-    headers = parse_html(html)
-
     print("Найденные заголовки:")
     for header in headers:
         print(header)
